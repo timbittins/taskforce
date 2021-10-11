@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Force</title>
-    <link rel="stylesheet" href="./apps/style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <script src="./apps/app.js"></script>
+    <header>
+      <h1>To Do List</h1>
+    </header>
+    <main>
+      <form>
+        <div class="input__field">
+          <input type="text" class="todo__input" />
+          <button class="todo__button" type="submit">
+            <i class="fas fa-plus-square"></i>
+          </button>
+        </div>
+        <div class="filter">
+          <select name="todos" class="filter__tasks">
+            <option value="all">All</option>
+            <option value="successful">Successful</option>
+            <option value="unfinished">Unfinished</option>
+          </select>
+        </div>
+      </form>
+
+      <section class="todo__container">
+        <ul class="todo__list"></ul>
+      </section>
+    </main>
+
+    <script src="apps/app.js"></script>
   </body>
 </html>
